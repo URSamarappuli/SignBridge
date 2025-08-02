@@ -214,8 +214,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(
-                        onPressed: () => AuthService().signInWithGoogle(),
-                        // Add Google sign-in logic
+                        onPressed: () async {
+                          showDialog(
+                            context: context,
+                            barrierDismissible: false,
+                            builder: (context) => const Center(
+                                child: CircularProgressIndicator()),
+                          );
+                          try {
+                            await AuthService().signInWithGoogle();
+                            Navigator.pop(context); // remove loading spinner
+                          } catch (e) {
+                            Navigator.pop(context); // remove loading spinner
+                            showErrorDialog(
+                                'Google Sign-In Failed', e.toString());
+                          }
+                        },
                         icon: Image.asset(
                           'assets/images/google.png',
                           height: 27.0,
