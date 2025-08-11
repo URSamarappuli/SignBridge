@@ -34,6 +34,9 @@ flutter:
   assets:
     - assets/video/hello.mp4
     - assets/video/thank_you.mp4
+    - assets/video/ayubowan.mp4
+    - assets/video/how_are_you.mp4
+    - assets/video/alright.mp4
     # Images
     - assets/images/google.png
     - assets/images/AppLogo.jpeg

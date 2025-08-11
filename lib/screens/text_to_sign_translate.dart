@@ -17,10 +17,10 @@ class _TextToSignTranslateState extends State<TextToSignTranslate> {
 
   final Map<String, String> signMap = {
     'hello': 'assets/video/hello.mp4',
-    'thank': 'assets/video/thank_you.mp4',
-    'you': 'assets/video/thank_you.mp4',
-    'good': 'assets/video/good_morning.mp4',
-    'morning': 'assets/video/good_morning.mp4',
+    'thanks': 'assets/video/thank_you.mp4',
+    'ayubowan': 'assets/video/ayubowan.mp4',
+    'how': 'assets/video/how_are_you.mp4',
+    'alright': 'assets/video/alright.mp4',
   };
 
   @override
