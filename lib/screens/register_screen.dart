@@ -72,10 +72,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
         //add user details
         addUserDetails(
-          _fullNameController.text.trim(),
-          int.parse(_phoneNumberController.text.trim()),
-          _emailController.text.trim(),
-        );
+            _fullNameController.text.trim(),
+            int.parse(_phoneNumberController.text.trim()),
+            _emailController.text.trim(),
+            _passwordController.text.trim());
       } else {
         //if password and confirm password do not match
         showErrorDialog('Error', 'Passwords do not match.');
@@ -95,11 +95,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
     }
   }
 
-  Future addUserDetails(String fullName, int phoneNumber, String email) async {
+  Future addUserDetails(
+      String fullName, int phoneNumber, String email, String password) async {
     await FirebaseFirestore.instance.collection('users').add({
-      'full name': fullName,
-      'phone number': phoneNumber,
+      'fullName': fullName,
+      'phoneNumber': phoneNumber,
       'email': email,
+      "Password": password
     });
   }
 

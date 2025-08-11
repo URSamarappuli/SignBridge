@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_project/constants/colors.dart';
 import 'package:fyp_project/constants/style.dart';
-import 'package:fyp_project/screens/profile_screen.dart';
+import 'package:fyp_project/screens/profilePage/profile_screen.dart';
 import 'package:fyp_project/screens/sign_to_text_screen_01.dart';
 import 'package:fyp_project/screens/text_to_sign_translate.dart';
 

@@ -157,8 +157,8 @@ class _TextToSignTranslateState extends State<TextToSignTranslate> {
                 SizedBox(height: 20),
                 Center(
                   child: Container(
-                    width: 250,
-                    height: 250,
+                    width: 320,
+                    height: 350,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
