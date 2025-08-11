@@ -169,11 +169,30 @@ class _TextToSignTranslateState extends State<TextToSignTranslate> {
                     ),
                     child: _controller != null &&
                             _controller!.value.isInitialized
-                        ? AspectRatio(
-                            aspectRatio: _controller!.value.aspectRatio,
-                            child: VideoPlayer(_controller!),
+                        ? ClipRRect(
+                            borderRadius:
+                                BorderRadius.circular(10), // same as container
+                            child: SizedBox.expand(
+                              child: FittedBox(
+                                fit: BoxFit
+                                    .cover, // fill container, cropping if needed
+                                child: SizedBox(
+                                  width: _controller!.value.size.width,
+                                  height: _controller!.value.size.height,
+                                  child: VideoPlayer(_controller!),
+                                ),
+                              ),
+                            ),
                           )
-                        : Center(child: Text("Enter text and press Translate")),
+                        : ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                              'assets/images/avata.jpeg',
+                              width: 320,
+                              height: 350,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                   ),
                 ),
                 SizedBox(height: 30),

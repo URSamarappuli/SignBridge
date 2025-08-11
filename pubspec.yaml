@@ -33,8 +33,11 @@ flutter:
 
   assets:
     - assets/video/hello.mp4
+    - assets/video/thank_you.mp4
+    # Images
     - assets/images/google.png
     - assets/images/AppLogo.jpeg
+    - assets/images/avata.jpeg
 
 
 
