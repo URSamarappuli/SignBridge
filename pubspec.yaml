@@ -32,7 +32,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/video/hand_video.mp4
+    - assets/video/hello.mp4
     - assets/images/google.png
     - assets/images/AppLogo.jpeg
 

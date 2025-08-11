@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp_project/constants/style.dart';
 import 'package:fyp_project/screens/app_language.dart';
 import 'package:fyp_project/screens/avatar_appearance.dart';
-import 'package:fyp_project/screens/profile_screen.dart';
+import 'package:fyp_project/screens/profilePage/profile_screen.dart';
 import 'package:fyp_project/screens/theme_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:go_router/go_router.dart';
